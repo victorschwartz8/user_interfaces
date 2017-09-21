@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Exercise 1</title>
+  <link rel="stylesheet" href="style/exercise1.css">
+</head>
+<body>
+  <section id="container">
+    <header>
+      <img src="images/logo.png" width=150>
+      <nav class="menu">
+        <a href="https://www.allflicks.net/uk/">Films</a>
+        <a href="http://m.imdb.com/chart/top">Favorites</a>
+        <a href="http://www.imdb.com/movies-in-theaters/">New!</a>
+        <a href="https://help.netflix.com/en">Help</a>
+      </nav>
+    </header>
+    <form>
+      <div class="third-column">
+        <h2 class="section-title">PERSONAL INFORMATION</h2>
+      </div>
+      <div class="third-column">
+        First & Last Name<br>
+        <input type="text" name="name" value="Steve Jobs">
+        <br>
+        Birthday<br>
+        <input type="date" name="birthday" value="1955-02-24">
+        <br>
+        Photo<br>
+        <input type="text" name="path_to_photo" value="images/avatar.png">
+      </div>
+      <div class="third-column">
+        Email<br>
+        <input type="text" name="email" value="steve@apple.com">
+        <br>
+        Language<br>
+        <select name="language">
+          <option value="spanish">Spanish</option>
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+        </select>
+        <br>
+        <img id="profile" src="images/profile.png" width=60>
+      </div>
+    </form>
+    <form>
+      <div class="third-column">
+        <h2 class="section-title">BILLING INFORMATION</h2>
+      </div>
+      <div class="half-column">
+        Address<br>
+        <input type="text" name="address" value="One Infinite Loop, Cupertino, CA 95014">
+        <br>
+        Payment Method<br>
+        <select name="payment">
+          <option value="credit">Credit Card</option>
+          <option value="paypal">Paypal</option>
+          <option value="bank-transfer">Bank Transfer</option>
+        </select>
+        <br>
+        <div class="horizontal">
+          Number<br>
+          <input type="text" name="card-number" value="2543 8725 1200 4789">
+        </div>
+        <div class="horizontal">
+          Valid Through<br>
+          <input type="date" name="validity" value="2018-05-25">
+        </div>
+        <div class="horizontal">
+          Code<br>
+          <input type="text" name="code" value="845">
+        </div>
+      </div>
+    </form>
+    <footer>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/netflixus/">Facebook</a>|
+        <a href="https://twitter.com/netflix">Twitter</a>|
+        <a href="https://www.google.es/search?q=netflix&tbm=nws">Press</a>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
