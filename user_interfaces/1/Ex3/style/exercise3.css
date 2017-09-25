@@ -5,17 +5,19 @@ html, body {
   background-color: #fafafa;
 }
 
+/* Required for responsive design. */
 * {
   box-sizing: border-box;
 }
 
+/* Required for responsive design. */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* MOBILE */
+/* MOBILE: must be overridden if behavior not desired. */
 [class*="col-"] {
   float: left;
   width: 100%;
@@ -40,9 +42,11 @@ html, body {
 }
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
+  /* We're not aligning to center on desktop screens. */
   [class*="col-"] {
     text-align: left;
   }
+  /* Necessary to ensure that later columns don't skip over the empty one. */
   .empty {
     height: 50px;
   }
@@ -63,10 +67,12 @@ html, body {
     .col-12 {width: 100%;}
 }
 
+/* Necessary to ensure resized images are clear in Chrome and Safari. */
 img {
   image-rendering: -webkit-optimize-contrast;
 }
 
+/* Design preference: removes blue glow around input elements. */
 input {
   outline: none;
 }
@@ -132,6 +138,7 @@ form {
   clear: both;
 }
 
+/* Styling of input elements. */
 input, select {
     background-color: #D2D7D3;
     padding: 8px;
@@ -142,15 +149,11 @@ input, select {
     box-sizing: border-box;
 }
 
+/* The date element is sized a bit differently. */
 input[type="date"] {
   padding: 6px;
 }
 
 input {
   width: 90%;
-}
-
-.horizontal {
-  display: inline-block;
-  padding-right: 15px;
 }

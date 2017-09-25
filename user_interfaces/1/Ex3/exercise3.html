@@ -1,18 +1,23 @@
 <html>
 <head>
   <title>Exercise 3</title>
+  <!-- Necessary for responsiveness. -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/exercise3.css">
 </head>
 <body>
+  <!-- A container div is used to wrap the entire content. -->
   <section id="container">
+    <!-- The page is broken down by rows, conceptually. -->
     <div class="row">
       <header>
+        <!-- Example: the logo will take up 1/4 of the width of the screen in desktop mode, but 100% in tablet and mobile.  -->
         <div class="col-3 col-m-12">
           <img id="logo" src="images/logo.png" width=150>
         </div>
         <div class="col-5 empty">
         </div>
+        <!-- These links are arbitrary (but related) ones, naturally. -->
         <nav class="menu">
           <div class="col-1 col-m-3">
             <a href="https://www.allflicks.net/uk/">Films</a>
@@ -31,6 +36,7 @@
     </div>
     <div class="row">
       <form>
+        <!-- The desktop columns should add up to 12: 4 + 4 +4, here. -->
         <div class="col-4 col-m-12">
           <h2 class="section-title">PERSONAL INFORMATION</h2>
         </div>
@@ -66,12 +72,15 @@
           <h2 class="section-title">BILLING INFORMATION</h2>
         </div>
         <div class="col-8 col-m-12">
+          <!-- I'm using columns within columns here, to fine-tune the second menu. -->
+          <!-- The address, for example, takes up 50% of 8 columns, or 4 columns. -->
           <div class="col-6 col-m-12">
           Address<br>
             <input type="text" name="address" value="One Infinite Loop, Cupertino, CA 95014">
             <br>
           </div>
           <div class="col-6 empty"></div>
+          <!-- Note that I am not creating a new div of class row: if I did, the form elements would not be aligned. -->
           <div class="col-12 col-m-12">
             Payment Method<br>
             <select name="payment">
@@ -81,6 +90,7 @@
             </select>
             <br>
           </div>
+          <!-- This input, for example, takes up 30% of 8 columns (2.4 columns) - something impossible using a single set of 12 columns. -->
           <div class="col-4 col-m-12">
             Number<br>
             <input type="text" name="card-number" value="2543 8725 1200 4789">
