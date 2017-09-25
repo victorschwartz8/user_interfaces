@@ -1,0 +1,110 @@
+<html>
+<head>
+  <title>Exercise 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/exercise3.css">
+</head>
+<body>
+  <section id="container">
+    <div class="row">
+      <header>
+        <div class="col-3 col-m-12">
+          <img id="logo" src="images/logo.png" width=150>
+        </div>
+        <div class="col-5 empty">
+        </div>
+        <nav class="menu">
+          <div class="col-1 col-m-3">
+            <a href="https://www.allflicks.net/uk/">Films</a>
+          </div>
+          <div class="col-1 col-m-3">
+            <a href="http://m.imdb.com/chart/top">Favorites</a>
+          </div>
+          <div class="col-1 col-m-3">
+            <a href="http://www.imdb.com/movies-in-theaters/">New!</a>
+          </div>
+          <div class="col-1 col-m-3">
+            <a href="https://help.netflix.com/en">Help</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="row">
+      <form>
+        <div class="col-4 col-m-12">
+          <h2 class="section-title">PERSONAL INFORMATION</h2>
+        </div>
+        <div class="col-4 col-m-6">
+          First & Last Name<br>
+          <input type="text" name="name" value="Steve Jobs">
+          <br>
+          Birthday<br>
+          <input type="date" name="birthday" value="1955-02-24">
+          <br>
+          Photo<br>
+          <input type="text" name="path_to_photo" value="images/avatar.png">
+        </div>
+        <div class="col-4 col-m-6">
+          Email<br>
+          <input type="text" name="email" value="steve@apple.com">
+          <br>
+          Language<br>
+          <select name="language">
+            <option value="spanish">Spanish</option>
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+          </select>
+          <br>
+          <img id="profile" src="images/profile.png" width=60>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <form>
+        <div class="col-4 col-m-12">
+          <h2 class="section-title">BILLING INFORMATION</h2>
+        </div>
+        <div class="col-8 col-m-12">
+          <div class="col-6 col-m-12">
+          Address<br>
+            <input type="text" name="address" value="One Infinite Loop, Cupertino, CA 95014">
+            <br>
+          </div>
+          <div class="col-6 empty"></div>
+          <div class="col-12 col-m-12">
+            Payment Method<br>
+            <select name="payment">
+              <option value="credit">Credit Card</option>
+              <option value="paypal">Paypal</option>
+              <option value="bank-transfer">Bank Transfer</option>
+            </select>
+            <br>
+          </div>
+          <div class="col-4 col-m-12">
+            Number<br>
+            <input type="text" name="card-number" value="2543 8725 1200 4789">
+          </div>
+          <div class="col-4 col-m-12">
+            Valid Through<br>
+            <input type="date" name="validity" value="2018-05-25">
+          </div>
+          <div class="col-4 col-m-12">
+            Code<br>
+            <input type="text" name="code" value="845">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <footer>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/netflixus/">Facebook</a>|
+          <a href="https://twitter.com/netflix">Twitter</a>|
+          <a href="https://www.google.es/search?q=netflix&tbm=nws">Press</a>
+        </div>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
